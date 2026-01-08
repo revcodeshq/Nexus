@@ -1,6 +1,16 @@
-# Discord Bot
+# Aegis Bot
 
-A multi-purpose Discord bot featuring moderation, ticket system, and auto-mod capabilities.
+![Project Preview](preview.png)
+
+A comprehensive Discord bot focused on moderation and security.
+
+## Features
+
+- **Moderation**: Key commands (Kick, Ban, Timeout) are protected by specialized role guards.
+- **Log System**: Detailed embed logs for all moderation actions.
+- **Tickets**: Private support channels with a one-click setup.
+- **Auto-Mod**: Built-in filters for bad words and spam.
+- **Welcome**: Customizable welcome/goodbye messages.
 
 ## Setup
 
@@ -8,29 +18,26 @@ A multi-purpose Discord bot featuring moderation, ticket system, and auto-mod ca
    ```bash
    npm install
    ```
-2. **Configure environment**
-   Create a `.env` file:
-   ```
-   DISCORD_TOKEN=
-   CLIENT_ID=
-   GUILD_ID=
-   ```
-3. **Configure Settings**
-   Update `config.json` with your role and channel IDs.
 
-4. **Deploy Commands**
+2. **Configuration**
+   - Create a `.env` file with your credentials:
+     ```
+     DISCORD_TOKEN=your_token
+     CLIENT_ID=your_id
+     GUILD_ID=your_id
+     ```
+   - Update `config.json` with your specific Role and Channel IDs.
+
+3. **Deploy Commands**
    ```bash
    npm run deploy
    ```
 
-5. **Start**
+4. **Start**
    ```bash
    npm start
    ```
 
-## Features
+## Customization
 
-- **Moderation**: Kick, Ban, Timeout (with Mod role guards)
-- **Tickets**: Interactive support ticket system
-- **Auto-Mod**: Bad word filter and spam protection
-- **Logging**: Moderation actions logged to configured channel
+You can adjust spam thresholds and filtered words directly in `config.json`.
